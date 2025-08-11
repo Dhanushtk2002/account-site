@@ -4,6 +4,9 @@ import Sidebar from './sidebar';
 import Dashboard from './dashboard';
 import Navbar from './navbar';
 import TopNavbar from './navbar';
+import Sales from './sales';
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
 
 function App() {
   return (
@@ -22,10 +25,37 @@ function App() {
           Learn React
         </a> */}
        {/* <Navbar/> */}
+        <Router>
+      <div className="app-layout">
+        {/* Sidebar */}
+        <aside className="sidebar">
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/sales">Sales</Link>
+            </li>
+            <li>
+              <Link to="/purchases">Purchases</Link>
+            </li>
+          </ul>
+        </aside>
+        {/* Main Content */}
+        <main className="content">
+          <Routes>
+            <Route path="/" element={<h1>Home Page</h1>} />
+            <Route path="/sales" element={<Sales />} />
+            <Route path="/purchases" element={<h1>Purchases Page</h1>} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
+
        <TopNavbar/>
       <Sidebar />
       <Dashboard/>
-
+      <Sales/>
     
       </header>
     </div>
