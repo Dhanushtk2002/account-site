@@ -3,12 +3,11 @@ import Sidebar from './sidebar';
 import Dashboard from './dashboard';
 import TopNavbar from './navbar';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
- 
 // Temporary placeholder components
 function Home() { return <h1>Home</h1>; }
 function Sales() { return <h1>Sales</h1>; }
 function Purchases() { return <h1>Purchases</h1>; }
- 
+
 function App() {
   return (
     <div className="App">
@@ -22,7 +21,7 @@ function App() {
               <li><Link to="/purchases">Purchases</Link></li>
             </ul>
           </aside>
- 
+
           {/* Main Content */}
           <main className="content">
             <Routes>
@@ -33,7 +32,7 @@ function App() {
           </main>
         </div>
       </Router>
- 
+
       <TopNavbar />
       <Sidebar />
       <Dashboard />
