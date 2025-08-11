@@ -1,0 +1,65 @@
+.sales-content {
+  padding: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.sales-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.tabs button {
+  background: #f1f3f6;
+  border: none;
+  margin-right: 10px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tabs .active {
+  background: #4a90e2;
+  color: white;
+}
+
+.sales-body {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 15px;
+}
+
+.sales-icons {
+  flex: 1 1 60%;
+  margin-bottom: 20px;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.icon-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.chart-section {
+  flex: 1 1 30%;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #ddd;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+
+
+
