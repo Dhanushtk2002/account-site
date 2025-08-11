@@ -1,0 +1,78 @@
+.top-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+}
+
+.left-section, .right-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.left-section img {
+  height: 32px;
+  width: 32px;
+}
+
+.icon {
+  font-size: 18px;
+  color: #1f2937;
+  cursor: pointer;
+}
+
+.notification {
+  position: relative;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: #ef4444;
+  color: white;
+  font-size: 10px;
+  border-radius: 9999px;
+  padding: 2px 5px;
+}
+
+.profile-icon {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+/* Top Navbar */
+
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 60px; /* below the navbar */
+  left: 0;
+  width: 200px;
+  height: calc(100vh - 60px);
+  background-color: #f9fafb;
+  padding-top: 20px;
+  overflow-y: auto;
+  z-index: 900;
+}
+
+/* Dashboard/Main content */
+.dashboard-container {
+  margin-left: 200px;  /* width of sidebar */
+  margin-top: 60px;    /* height of navbar */
+  padding: 20px;
+  background: #f5f6fa;
+  min-height: 100vh;
+}
+
