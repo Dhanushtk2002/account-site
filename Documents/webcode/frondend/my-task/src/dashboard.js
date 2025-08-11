@@ -171,9 +171,6 @@ const Dashboard = () => {
   <span className="separator">|</span>
   <span><strong>28</strong> Customers</span>
 </div>
-
-
-
           <ResponsiveContainer width="100%" height={300}>
             <ComposedChart data={salesData}>
               <CartesianGrid strokeDasharray="3 3" />
