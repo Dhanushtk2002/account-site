@@ -44,9 +44,9 @@ function App() {
         {/* Main Content */}
         <main className="content">
           <Routes>
-            <Route path="/" element={<h1>Home Page</h1>} />
-            <Route path="/sales" element={<Sales />} />
-            <Route path="/purchases" element={<h1>Purchases Page</h1>} />
+            <Route path="/" element={<Home/>} />
+            <Route path="/sales" element={<Sales/>} />
+            <Route path="/purchases" element={<Purchases/>} />
           </Routes>
         </main>
       </div>
